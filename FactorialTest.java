@@ -1,6 +1,3 @@
- 
-
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,10 +16,10 @@ public class FactorialTest {
     @Test
     public void factorialOfTest(){
         //:Given
-        BigInteger expected = new BigInteger("24");
+        BigInteger expected = new BigInteger("3628800");
 
         //:When
-        BigInteger actual = factorial.factorialOf(4);
+        BigInteger actual = factorial.factorialOf(10);
 
         //:Then
         Assert.assertEquals("Values should be equal", expected, actual);
